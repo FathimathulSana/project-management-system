@@ -89,7 +89,7 @@ class ProjectController extends Controller
 
             return response()->json(['success' => true, 'project' => $project], 200);
         } catch (\Exception $e) {
-            return response()->json(['success' => false, 'err_msg' => 'Failed to fetch projects', 'error' => $e->getMessage()], 500);
+            return response()->json(['success' => false, 'err_msg' => 'Failed to fetch project report', 'error' => $e->getMessage()], 500);
         }
     }
 }
